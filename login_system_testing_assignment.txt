@@ -1,0 +1,85 @@
+Login system
+
+Consider a login system which has two inputs as userName and password.
+
+All the possible inputs to the login system are as follows:
+
+suppose
+userName: admin
+password: admin@123
+
+Negative inputs
+1. Wrong userName and wrong password. (userName and password of a user who is not registered in the system.)
+u:ram
+p:sen
+
+2. Correct userName and wrong password
+u:admin
+p:pass@1
+
+3. Wrong userName and correct password
+u:ram
+p:admin@123
+
+4. Blank inputs(blank userName and password fields)
+u:
+p:
+
+5. Blank userName and filled password
+u:
+p:passwd
+
+6. Filled userName and blank password
+u:admin
+p:
+
+Positive input
+1. Correct userName and correct password
+u:admin
+p:admin@123
+
+
+Possible Outputs as per inputs
+
+1. Wring userName and wrong password. (userName and password of a user who is not registered in the system.)
+u:ram
+p:sen
+output
+Error:User not registered
+
+2. Correct userName and wrong password
+u:admin
+p:pass@1
+output
+Error:Incorrect username or passowrd
+
+3. Wrong userName and correct password
+u:ram
+p:admin@123
+output
+Error:Incorrect username or passowrd
+
+4. Blank inputs(blank userName and password fields)
+u:
+p:
+output
+Error:Enter valid input
+
+5. Blank userName and filled password
+u:
+p:passwd
+output
+Error:Enter username
+
+6. Filled userName and blank password
+u:admin
+p:
+output
+Error:Enter passowrd
+
+Positive input
+1. Correct userName and correct password
+u:admin
+p:admin@123
+output
+Login Successful.
